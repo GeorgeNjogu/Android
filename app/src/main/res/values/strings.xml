@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">George</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+</resources>
