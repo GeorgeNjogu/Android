@@ -20,7 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.george.ui.theme.GeorgeTheme
+
 
 class ContactActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

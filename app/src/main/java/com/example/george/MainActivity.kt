@@ -53,6 +53,8 @@ class MainActivity : ComponentActivity() {
 fun George() {
     val about = LocalContext.current
     val contact = LocalContext.current
+    val login = LocalContext.current
+    val location = LocalContext.current
     Column(
         modifier = Modifier
             .background(Color.Cyan)
@@ -117,6 +119,42 @@ fun George() {
             )
 
         }
+
+        Button(
+            onClick = {
+               login.startActivity(Intent(login, LoginActivity::class.java))
+
+            },
+            colors = ButtonDefaults.buttonColors(Color.Blue),
+            shape = RoundedCornerShape(5.dp),
+
+
+            ) {
+            Text(
+                text = "Login"
+
+            )
+
+        }
+
+        Button(
+            onClick = {
+                location.startActivity(Intent(location, LocationActivity::class.java))
+
+            },
+            colors = ButtonDefaults.buttonColors(Color.Blue),
+            shape = RoundedCornerShape(5.dp),
+
+
+            ) {
+            Text(
+                text = "Location"
+
+            )
+
+        }
+
+
 
 
 
